@@ -20,16 +20,16 @@ const config: GatsbyConfig = {
   trailingSlash: `always`,
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-jodie`,
-      // See the theme's README for all available options
-      options: {
-        navigation: [
-          { name: `Projects`, slug: `/projects` },
-          { name: `Art`, slug: `/art` },
-          { name: `About`, slug: `/about` },
-        ],
-      },
-    },
+  resolve: `@lekoarts/gatsby-theme-jodie`,
+  options: {
+    navigation: [
+      { name: `About`, slug: `/about` },
+      { name: `Concerts`, slug: `/concerts` },
+      { name: `Listen`, slug: `/listen` },
+      { name: `Contact`, slug: `/contact` },
+    ],
+  },
+},
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
