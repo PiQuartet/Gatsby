@@ -7,6 +7,7 @@ cover: "./quartairpic1.jpg"
 # Concerts
 
 import AgendaItem from "../../../src/components/AgendaItem"
+import WeeztixEmbed from "../../../src/components/WeeztixEmbed"
 
 ## Upcoming Concerts
 
@@ -19,13 +20,10 @@ import AgendaItem from "../../../src/components/AgendaItem"
   program="A string quartet concert with works by Joey Roukens, Gabriella Smith, Caroline Shaw"
   imageSrc="/images/pi2donnalamonda.jpg"
 >
-  <div
-    className="ot-iframe"
-    data-ot-url="https://shop.weeztix.com/aa1bef95-f079-4f3a-a9e2-66ce956edae2"
-    data-ot-guid="aa1bef95-f079-4f3a-a9e2-66ce956edae2"
+  <WeeztixEmbed
+    url="https://shop.weeztix.com/aa1bef95-f079-4f3a-a9e2-66ce956edae2"
+    guid="aa1bef95-f079-4f3a-a9e2-66ce956edae2"
   />
-
-  <script src="https://v1.widget.shop.weeztix.com/injector.js"></script>
 </AgendaItem>
 
 <AgendaItem
