@@ -10,6 +10,7 @@ type AgendaItemProps = {
   program?: string
   imageSrc?: string
   imageAlt?: string
+  children?: React.ReactNode
 }
 
 export default function AgendaItem({
@@ -22,6 +23,7 @@ export default function AgendaItem({
   program,
   imageSrc,
   imageAlt,
+  children,
 }: AgendaItemProps) {
   return (
     <section
@@ -66,6 +68,8 @@ export default function AgendaItem({
 
           {program ? <p style={{ margin: "0 0 12px 0" }}>{program}</p> : null}
 
+          {children}
+
           {ticketsUrl ? (
             <a
               href={ticketsUrl}
@@ -79,7 +83,7 @@ export default function AgendaItem({
                 border: "1px solid rgba(255,255,255,0.18)",
               }}
             >
-              Tickets / Info
+              Tickets and More Information
             </a>
           ) : null}
         </div>
