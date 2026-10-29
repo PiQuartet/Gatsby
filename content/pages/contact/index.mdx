@@ -5,7 +5,6 @@ cover: "./pi2donnalamonda.jpg"
 ---
 
 import SocialLinks from "../../../src/components/SocialLinks"
-import NewsletterSignup from "../../../src/components/NewsletterSignup"
 
 # Contact
 
@@ -32,6 +31,39 @@ import NewsletterSignup from "../../../src/components/NewsletterSignup"
 
 ## Sign up for Our Newsletter
 
-<NewsletterSignup />
+
+<p>Subscribe to receive news, concerts, and updates from Pi Quartet.</p>
+
+<form
+  action="https://piquartet.us9.list-manage.com/subscribe/post?u=311775ce1cce35be83c303aea&amp;id=8c405e48de&amp;f_id=00cd7ae1f0"
+  method="POST"
+  target="_blank"
+>
+  <label htmlFor="newsletter-email">Email Address</label>
+  <br />
+  <input
+    type="email"
+    id="newsletter-email"
+    name="EMAIL"
+    required
+  />
+  <br /><br />
+
+  {/* Mailchimp spam protection */}
+  <div
+    aria-hidden="true"
+    style={{ position: "absolute", left: "-5000px" }}
+  >
+    <input
+      type="text"
+      name="b_311775ce1cce35be83c303aea_8c405e48de"
+      tabIndex={-1}
+      defaultValue=""
+    />
+  </div>
+
+  <button type="submit">Subscribe</button>
+</form>
+
 
 
